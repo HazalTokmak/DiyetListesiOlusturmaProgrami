@@ -9,15 +9,18 @@ namespace DiyetListesiOlusturmaProgrami.UI
 
         private void btnGec_Click(object sender, EventArgs e)
         {
-
+            if (!chcUyelikYok.Checked)
+            {
+                
+                btnGec.Enabled = true;
+                return;
+            }
 
             if (txtKullaniciAdi.Text == null || txtSifre.Text == null || msktxtTelefonNumarasi.Text == null)
             {
                 MessageBox.Show("Lütfen Boþ Alanlarý Doldurunuz!");
                 return;
             }
-
-
             try
             {
                 KullaniciBilgileri kullaniciBilgileri = new KullaniciBilgileri()
@@ -33,8 +36,9 @@ namespace DiyetListesiOlusturmaProgrami.UI
 
                 MessageBox.Show(ex.Message);
             }
-        MailGirisi mailGirisi = new MailGirisi();
+            MailGirisi mailGirisi = new MailGirisi();
             mailGirisi.Show();
+
         }
 
 
