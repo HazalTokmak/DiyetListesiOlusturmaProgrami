@@ -28,27 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MailGirisi));
             lblIsim = new Label();
             txtAd = new TextBox();
             btnUyelikOlustur = new Button();
             lblSoyAd = new Label();
             lblMail = new Label();
             txtSoyad = new TextBox();
-            txtMail = new TextBox();
+            cmbMail = new ComboBox();
+            btnMailSec = new Button();
             SuspendLayout();
             // 
             // lblIsim
             // 
             lblIsim.AutoSize = true;
-            lblIsim.Location = new Point(146, 83);
+            lblIsim.BackColor = Color.Transparent;
+            lblIsim.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
+            lblIsim.Location = new Point(294, 15);
             lblIsim.Name = "lblIsim";
-            lblIsim.Size = new Size(31, 20);
+            lblIsim.Size = new Size(33, 20);
             lblIsim.TabIndex = 0;
             lblIsim.Text = "Ad:";
             // 
             // txtAd
             // 
-            txtAd.Location = new Point(269, 83);
+            txtAd.Location = new Point(358, 8);
             txtAd.Name = "txtAd";
             txtAd.Size = new Size(216, 27);
             txtAd.TabIndex = 1;
@@ -56,59 +60,81 @@
             // 
             // btnUyelikOlustur
             // 
-            btnUyelikOlustur.Location = new Point(432, 280);
+            btnUyelikOlustur.BackColor = Color.FromArgb(255, 255, 192);
+            btnUyelikOlustur.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
+            btnUyelikOlustur.Location = new Point(364, 500);
             btnUyelikOlustur.Name = "btnUyelikOlustur";
-            btnUyelikOlustur.Size = new Size(184, 50);
+            btnUyelikOlustur.Size = new Size(210, 68);
             btnUyelikOlustur.TabIndex = 2;
             btnUyelikOlustur.Text = "Üyelik Oluştur";
-            btnUyelikOlustur.UseVisualStyleBackColor = true;
+            btnUyelikOlustur.UseVisualStyleBackColor = false;
             btnUyelikOlustur.Click += btnUyelikOlustur_Click;
             // 
             // lblSoyAd
             // 
             lblSoyAd.AutoSize = true;
-            lblSoyAd.Location = new Point(146, 142);
+            lblSoyAd.BackColor = Color.Transparent;
+            lblSoyAd.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
+            lblSoyAd.Location = new Point(283, 56);
             lblSoyAd.Name = "lblSoyAd";
-            lblSoyAd.Size = new Size(53, 20);
+            lblSoyAd.Size = new Size(56, 20);
             lblSoyAd.TabIndex = 0;
             lblSoyAd.Text = "Soyad:";
             // 
             // lblMail
             // 
             lblMail.AutoSize = true;
-            lblMail.Location = new Point(146, 199);
+            lblMail.BackColor = Color.Transparent;
+            lblMail.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
+            lblMail.Location = new Point(294, 99);
             lblMail.Name = "lblMail";
-            lblMail.Size = new Size(41, 20);
+            lblMail.Size = new Size(45, 20);
             lblMail.TabIndex = 0;
             lblMail.Text = "Mail:";
             // 
             // txtSoyad
             // 
-            txtSoyad.Location = new Point(269, 142);
+            txtSoyad.Location = new Point(358, 49);
             txtSoyad.Name = "txtSoyad";
             txtSoyad.Size = new Size(216, 27);
             txtSoyad.TabIndex = 1;
             // 
-            // txtMail
+            // cmbMail
             // 
-            txtMail.Location = new Point(269, 199);
-            txtMail.Name = "txtMail";
-            txtMail.Size = new Size(216, 27);
-            txtMail.TabIndex = 1;
-            txtMail.TextChanged += txtMail_TextChanged;
+            cmbMail.FormattingEnabled = true;
+            cmbMail.Location = new Point(358, 91);
+            cmbMail.Name = "cmbMail";
+            cmbMail.Size = new Size(216, 28);
+            cmbMail.TabIndex = 3;
+            // 
+            // btnMailSec
+            // 
+            btnMailSec.BackColor = Color.FromArgb(255, 255, 192);
+            btnMailSec.Location = new Point(595, 71);
+            btnMailSec.Name = "btnMailSec";
+            btnMailSec.Size = new Size(80, 48);
+            btnMailSec.TabIndex = 4;
+            btnMailSec.Text = "Mail Seç";
+            btnMailSec.UseVisualStyleBackColor = false;
+            btnMailSec.Click += btnMailSec_Click;
             // 
             // MailGirisi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            AutoValidate = AutoValidate.EnablePreventFocusChange;
+            BackColor = Color.FromArgb(192, 192, 255);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(922, 593);
+            Controls.Add(btnMailSec);
+            Controls.Add(cmbMail);
             Controls.Add(btnUyelikOlustur);
-            Controls.Add(txtMail);
             Controls.Add(txtSoyad);
             Controls.Add(txtAd);
             Controls.Add(lblMail);
             Controls.Add(lblSoyAd);
             Controls.Add(lblIsim);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "MailGirisi";
             StartPosition = FormStartPosition.CenterParent;
             Text = "MailGirisi";
@@ -124,6 +150,7 @@
         private Label lblSoyAd;
         private Label lblMail;
         private TextBox txtSoyad;
-        private TextBox txtMail;
+        private ComboBox cmbMail;
+        private Button btnMailSec;
     }
 }
