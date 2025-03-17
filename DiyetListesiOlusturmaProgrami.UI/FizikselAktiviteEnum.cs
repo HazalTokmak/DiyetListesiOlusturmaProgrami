@@ -14,7 +14,7 @@ namespace DiyetListesiOlusturmaProgrami.UI
         Yüzme,
         KoşuBandıKullanma,
         DansEtme,
-        Yoga,
+        Yoga, 
         Pilates,
         AğırsikletAntrenmanı,
         KürekÇekme,
