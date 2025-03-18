@@ -38,6 +38,7 @@
             msktxtTelefonNumarasi = new MaskedTextBox();
             txtSifre = new TextBox();
             label4 = new Label();
+            btnCikis = new Button();
             SuspendLayout();
             // 
             // label1
@@ -123,6 +124,17 @@
             label4.TabIndex = 5;
             label4.Text = "İleri:";
             // 
+            // btnCikis
+            // 
+            btnCikis.BackgroundImage = (Image)resources.GetObject("btnCikis.BackgroundImage");
+            btnCikis.BackgroundImageLayout = ImageLayout.Stretch;
+            btnCikis.Location = new Point(822, 0);
+            btnCikis.Name = "btnCikis";
+            btnCikis.Size = new Size(23, 24);
+            btnCikis.TabIndex = 6;
+            btnCikis.UseVisualStyleBackColor = true;
+            btnCikis.Click += btnCikis_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -131,6 +143,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(844, 449);
+            Controls.Add(btnCikis);
             Controls.Add(label4);
             Controls.Add(msktxtTelefonNumarasi);
             Controls.Add(chcUyelikYok);
@@ -161,5 +174,6 @@
         private MaskedTextBox msktxtTelefonNumarasi;
         private TextBox txtSifre;
         private Label label4;
+        private Button btnCikis;
     }
 }

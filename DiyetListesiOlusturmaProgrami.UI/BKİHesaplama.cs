@@ -31,7 +31,7 @@ namespace DiyetListesiOlusturmaProgrami.UI
                     MessageBox.Show("Harf ya da noktalama işareti girişi yapamazsınız");
                     return;
                 }
-                if ( txtAslaYememDiyecegi1.Text.All(char.IsDigit)||txtAslaYememDiyecegi1.Text.All(char.IsPunctuation) || txtAslaYememDiyecegi2.Text.All(char.IsDigit) || txtAslaYememDiyecegi3.Text.All(char.IsDigit) || txtAslaHayirDiyemecegi1.Text.All<char>(char.IsDigit) || txtAslaHayirDiyemecegi2.Text.All<char>(char.IsDigit) || txtAslaHayirDiyemecegi3.Text.All<char>(char.IsDigit) || txt3GunlukBesinTuketimKaydi.Text.All<char>(char.IsPunctuation) || txtAslaYememDiyecegi1.Text.All(char.IsPunctuation) || txtAslaYememDiyecegi2.Text.All(char.IsPunctuation) || txtAslaYememDiyecegi3.Text.All(char.IsPunctuation) || txtAslaHayirDiyemecegi1.Text.All<char>(char.IsPunctuation) || txtAslaHayirDiyemecegi2.Text.All<char>(char.IsPunctuation) || txtAslaHayirDiyemecegi3.Text.All<char>(char.IsPunctuation) || txt3GunlukBesinTuketimKaydi.Text.All<char>(char.IsPunctuation))
+                if (txtAslaYememDiyecegi1.Text.All(char.IsDigit) || txtAslaYememDiyecegi1.Text.All(char.IsPunctuation) || txtAslaYememDiyecegi2.Text.All(char.IsDigit) || txtAslaYememDiyecegi3.Text.All(char.IsDigit) || txtAslaHayirDiyemecegi1.Text.All<char>(char.IsDigit) || txtAslaHayirDiyemecegi2.Text.All<char>(char.IsDigit) || txtAslaHayirDiyemecegi3.Text.All<char>(char.IsDigit) || txt3GunlukBesinTuketimKaydi.Text.All<char>(char.IsPunctuation) || txtAslaYememDiyecegi1.Text.All(char.IsPunctuation) || txtAslaYememDiyecegi2.Text.All(char.IsPunctuation) || txtAslaYememDiyecegi3.Text.All(char.IsPunctuation) || txtAslaHayirDiyemecegi1.Text.All<char>(char.IsPunctuation) || txtAslaHayirDiyemecegi2.Text.All<char>(char.IsPunctuation) || txtAslaHayirDiyemecegi3.Text.All<char>(char.IsPunctuation) || txt3GunlukBesinTuketimKaydi.Text.All<char>(char.IsPunctuation))
                 {
                     MessageBox.Show("Sayı ya da noktalama işareti girişi yapamazsınız.");
                     return;
@@ -47,6 +47,11 @@ namespace DiyetListesiOlusturmaProgrami.UI
 
             KanDegerleriVeFizikselAktivite kanDegerleriVeFizikselAktivite = new KanDegerleriVeFizikselAktivite();
             kanDegerleriVeFizikselAktivite.ShowDialog();
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

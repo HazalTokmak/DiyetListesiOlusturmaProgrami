@@ -46,6 +46,8 @@
             txtAslaYememDiyecegi3 = new TextBox();
             label6 = new Label();
             btnGec = new Button();
+            btnCikis = new Button();
+            label7 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -198,14 +200,36 @@
             // btnGec
             // 
             btnGec.BackColor = Color.LightCoral;
+            btnGec.BackgroundImage = (Image)resources.GetObject("btnGec.BackgroundImage");
+            btnGec.BackgroundImageLayout = ImageLayout.Stretch;
             btnGec.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
-            btnGec.Location = new Point(703, 490);
+            btnGec.Location = new Point(724, 460);
             btnGec.Name = "btnGec";
-            btnGec.Size = new Size(178, 115);
+            btnGec.Size = new Size(157, 129);
             btnGec.TabIndex = 2;
-            btnGec.Text = "Geç:";
             btnGec.UseVisualStyleBackColor = false;
             btnGec.Click += btnGec_Click;
+            // 
+            // btnCikis
+            // 
+            btnCikis.BackgroundImage = (Image)resources.GetObject("btnCikis.BackgroundImage");
+            btnCikis.BackgroundImageLayout = ImageLayout.Stretch;
+            btnCikis.Location = new Point(985, 0);
+            btnCikis.Name = "btnCikis";
+            btnCikis.Size = new Size(23, 24);
+            btnCikis.TabIndex = 6;
+            btnCikis.UseVisualStyleBackColor = true;
+            btnCikis.Click += btnCikis_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
+            label7.Location = new Point(737, 475);
+            label7.Name = "label7";
+            label7.Size = new Size(39, 20);
+            label7.TabIndex = 7;
+            label7.Text = "Geç:";
             // 
             // BKİHesaplama
             // 
@@ -215,6 +239,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1008, 631);
+            Controls.Add(label7);
+            Controls.Add(btnCikis);
             Controls.Add(btnGec);
             Controls.Add(txtAslaYememDiyecegi1);
             Controls.Add(txtAslaYememDiyecegi2);
@@ -258,5 +284,7 @@
         private TextBox txtAslaYememDiyecegi3;
         private Label label6;
         private Button btnGec;
+        private Button btnCikis;
+        private Label label7;
     }
 }

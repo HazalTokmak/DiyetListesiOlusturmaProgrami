@@ -37,6 +37,7 @@
             txtSoyad = new TextBox();
             cmbMail = new ComboBox();
             btnMailSec = new Button();
+            btnCikis = new Button();
             SuspendLayout();
             // 
             // lblIsim
@@ -118,6 +119,17 @@
             btnMailSec.UseVisualStyleBackColor = false;
             btnMailSec.Click += btnMailSec_Click;
             // 
+            // btnCikis
+            // 
+            btnCikis.BackgroundImage = (Image)resources.GetObject("btnCikis.BackgroundImage");
+            btnCikis.BackgroundImageLayout = ImageLayout.Stretch;
+            btnCikis.Location = new Point(900, -1);
+            btnCikis.Name = "btnCikis";
+            btnCikis.Size = new Size(23, 24);
+            btnCikis.TabIndex = 6;
+            btnCikis.UseVisualStyleBackColor = true;
+            btnCikis.Click += btnCikis_Click;
+            // 
             // MailGirisi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -126,6 +138,7 @@
             BackColor = Color.FromArgb(192, 192, 255);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(922, 593);
+            Controls.Add(btnCikis);
             Controls.Add(btnMailSec);
             Controls.Add(cmbMail);
             Controls.Add(btnUyelikOlustur);
@@ -152,5 +165,6 @@
         private TextBox txtSoyad;
         private ComboBox cmbMail;
         private Button btnMailSec;
+        private Button btnCikis;
     }
 }

@@ -9,10 +9,25 @@ namespace DiyetListesiOlusturmaProgrami.UI
 
         private void btnGec_Click(object sender, EventArgs e)
         {
+
+            if (txtKullaniciAdi.Text == null || string.IsNullOrWhiteSpace(txtKullaniciAdi.Text) || txtSifre.Text == null || string.IsNullOrWhiteSpace(txtSifre.Text))
+            {
+                MessageBox.Show("Lütfen Alanlarý Boþ Býrakmayýnýz");
+                return;
+            }
+            if (!(txtKullaniciAdi.Text == null || string.IsNullOrWhiteSpace(txtKullaniciAdi.Text) || txtSifre.Text == null || string.IsNullOrWhiteSpace(txtSifre.Text)))
+            {
+                BKÝHesaplama bKÝHesaplama = new BKÝHesaplama();
+                bKÝHesaplama.ShowDialog();
+            }
+
+
             if (!chcUyelikYok.Checked)
             {
-                
+
                 btnGec.Enabled = true;
+                MailGirisi mailGirisii = new MailGirisi();
+                mailGirisii.Show();
                 return;
             }
 
@@ -41,8 +56,9 @@ namespace DiyetListesiOlusturmaProgrami.UI
 
         }
 
-
-
-
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
     }
 }
