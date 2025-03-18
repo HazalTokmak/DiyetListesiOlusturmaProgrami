@@ -12,7 +12,7 @@ namespace DiyetListesiOlusturmaProgrami.UI
 {
     public partial class KanDegerleriVeFizikselAktivite : Form
     {
-        List<KanDegerleri> kanDegerleri=new List<KanDegerleri>();
+        List<KanDegerleri> kanDegerleri = new List<KanDegerleri>();
         public KanDegerleriVeFizikselAktivite()
         {
             InitializeComponent();
@@ -21,7 +21,13 @@ namespace DiyetListesiOlusturmaProgrami.UI
         private void KanDegerleriVeFizikselAktivite_Load(object sender, EventArgs e)
         {
             cmbKanDegerleri.DataSource = Enum.GetValues(typeof(KanDegerleri));
-            cmbFizikselAktivite.DataSource=Enum.GetValues(typeof(Fiz))
+            cmbFizikselAktivite.DataSource = Enum.GetValues(typeof(FizikselAktiviteEnum));
+
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
