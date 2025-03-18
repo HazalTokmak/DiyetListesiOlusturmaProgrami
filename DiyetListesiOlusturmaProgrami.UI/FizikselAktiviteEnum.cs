@@ -8,7 +8,7 @@ namespace DiyetListesiOlusturmaProgrami.UI
 {
     public enum FizikselAktiviteEnum
     {
-        Yok,
+        Yok, 
         Yürüyüş,
         Koşu,
         Bisiklet,
