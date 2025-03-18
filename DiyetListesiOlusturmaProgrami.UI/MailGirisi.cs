@@ -67,10 +67,10 @@ namespace DiyetListesiOlusturmaProgrami.UI
         //}
         private void MailGonder(string mesaj)
         {
-            
-            
-            
-            
+
+
+
+
             string ad = (txtAd.Text + "." + txtSoyad.Text + "@gmail.com");
 
 
@@ -117,6 +117,11 @@ namespace DiyetListesiOlusturmaProgrami.UI
                 char rastgeleNoktalama = noktalama[random.Next(0, noktalama.Length)];
                 cmbMail.Items.Add(adSoyad + rastgeleNoktalama + rastgeleSayi.ToString() + mail);
             }
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
