@@ -58,7 +58,7 @@ namespace DiyetListesiOlusturmaProgrami.UI
 
         private void btnCikis_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit(); 
         }
     }
 }
