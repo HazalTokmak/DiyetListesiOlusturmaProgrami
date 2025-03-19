@@ -97,7 +97,7 @@
             txtBoy.Location = new Point(94, 83);
             txtBoy.Name = "txtBoy";
             txtBoy.Size = new Size(219, 27);
-            txtBoy.TabIndex = 1;
+            txtBoy.TabIndex = 2;
             // 
             // txtYas
             // 
@@ -105,7 +105,7 @@
             txtYas.Location = new Point(94, 131);
             txtYas.Name = "txtYas";
             txtYas.Size = new Size(219, 27);
-            txtYas.TabIndex = 1;
+            txtYas.TabIndex = 3;
             // 
             // txtAslaHayirDiyemecegi1
             // 
@@ -113,7 +113,7 @@
             txtAslaHayirDiyemecegi1.Location = new Point(662, 42);
             txtAslaHayirDiyemecegi1.Name = "txtAslaHayirDiyemecegi1";
             txtAslaHayirDiyemecegi1.Size = new Size(219, 27);
-            txtAslaHayirDiyemecegi1.TabIndex = 1;
+            txtAslaHayirDiyemecegi1.TabIndex = 4;
             // 
             // txtAslaHayirDiyemecegi2
             // 
@@ -121,7 +121,7 @@
             txtAslaHayirDiyemecegi2.Location = new Point(662, 86);
             txtAslaHayirDiyemecegi2.Name = "txtAslaHayirDiyemecegi2";
             txtAslaHayirDiyemecegi2.Size = new Size(219, 27);
-            txtAslaHayirDiyemecegi2.TabIndex = 1;
+            txtAslaHayirDiyemecegi2.TabIndex = 5;
             // 
             // txtAslaHayirDiyemecegi3
             // 
@@ -129,7 +129,7 @@
             txtAslaHayirDiyemecegi3.Location = new Point(662, 138);
             txtAslaHayirDiyemecegi3.Name = "txtAslaHayirDiyemecegi3";
             txtAslaHayirDiyemecegi3.Size = new Size(219, 27);
-            txtAslaHayirDiyemecegi3.TabIndex = 1;
+            txtAslaHayirDiyemecegi3.TabIndex = 6;
             // 
             // txt3GunlukBesinTuketimKaydi
             // 
@@ -138,7 +138,7 @@
             txt3GunlukBesinTuketimKaydi.Multiline = true;
             txt3GunlukBesinTuketimKaydi.Name = "txt3GunlukBesinTuketimKaydi";
             txt3GunlukBesinTuketimKaydi.Size = new Size(515, 212);
-            txt3GunlukBesinTuketimKaydi.TabIndex = 1;
+            txt3GunlukBesinTuketimKaydi.TabIndex = 10;
             // 
             // label4
             // 
@@ -168,7 +168,7 @@
             txtAslaYememDiyecegi1.Location = new Point(662, 242);
             txtAslaYememDiyecegi1.Name = "txtAslaYememDiyecegi1";
             txtAslaYememDiyecegi1.Size = new Size(219, 27);
-            txtAslaYememDiyecegi1.TabIndex = 1;
+            txtAslaYememDiyecegi1.TabIndex = 7;
             // 
             // txtAslaYememDiyecegi2
             // 
@@ -176,7 +176,7 @@
             txtAslaYememDiyecegi2.Location = new Point(662, 291);
             txtAslaYememDiyecegi2.Name = "txtAslaYememDiyecegi2";
             txtAslaYememDiyecegi2.Size = new Size(219, 27);
-            txtAslaYememDiyecegi2.TabIndex = 1;
+            txtAslaYememDiyecegi2.TabIndex = 8;
             // 
             // txtAslaYememDiyecegi3
             // 
@@ -184,7 +184,7 @@
             txtAslaYememDiyecegi3.Location = new Point(662, 356);
             txtAslaYememDiyecegi3.Name = "txtAslaYememDiyecegi3";
             txtAslaYememDiyecegi3.Size = new Size(219, 27);
-            txtAslaYememDiyecegi3.TabIndex = 1;
+            txtAslaYememDiyecegi3.TabIndex = 9;
             // 
             // label6
             // 
