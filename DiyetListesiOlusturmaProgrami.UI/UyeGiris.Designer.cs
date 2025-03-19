@@ -75,7 +75,7 @@
             chcUyelikYok.Location = new Point(501, 266);
             chcUyelikYok.Name = "chcUyelikYok";
             chcUyelikYok.Size = new Size(113, 24);
-            chcUyelikYok.TabIndex = 3;
+            chcUyelikYok.TabIndex = 4;
             chcUyelikYok.Text = "Üye Değilim";
             chcUyelikYok.UseVisualStyleBackColor = false;
             // 
@@ -105,14 +105,14 @@
             msktxtTelefonNumarasi.Mask = "(999) 000-0000";
             msktxtTelefonNumarasi.Name = "msktxtTelefonNumarasi";
             msktxtTelefonNumarasi.Size = new Size(179, 27);
-            msktxtTelefonNumarasi.TabIndex = 4;
+            msktxtTelefonNumarasi.TabIndex = 3;
             // 
             // txtSifre
             // 
             txtSifre.Location = new Point(501, 156);
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(179, 27);
-            txtSifre.TabIndex = 1;
+            txtSifre.TabIndex = 2;
             // 
             // label4
             // 
