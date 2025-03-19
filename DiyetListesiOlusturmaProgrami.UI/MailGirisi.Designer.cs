@@ -98,7 +98,7 @@
             txtSoyad.Location = new Point(358, 49);
             txtSoyad.Name = "txtSoyad";
             txtSoyad.Size = new Size(216, 27);
-            txtSoyad.TabIndex = 1;
+            txtSoyad.TabIndex = 2;
             // 
             // cmbMail
             // 
